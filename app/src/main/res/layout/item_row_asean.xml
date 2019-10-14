@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/flag_of_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_item_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:text="@string/asean_state"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:paddingTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_anthem"
+                tools:text="@string/national_anthem"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
